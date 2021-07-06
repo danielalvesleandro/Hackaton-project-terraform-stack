@@ -18,7 +18,7 @@ resource "aws_iam_role" "ecr_readOnly_role" {
 EOF
 
   tags = {
-      Name = "ecr_readOnly_role"
+      Name = "ecr_readOnly_role_${terraform.workspace}"
   }
 }
 
